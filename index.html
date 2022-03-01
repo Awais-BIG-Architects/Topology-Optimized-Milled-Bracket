@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&display=swap" rel="stylesheet"> 
+
+
+    <style>
+      .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      margin-top: auto;
+      width: 80%;
+      height: 90%;
+      }
+
+      .logo {
+            width: 8%;
+            height: 8%;
+            margin: 2% 10% 2% 10%;
+      }
+
+
+      h1,h2,h3,H4{
+          
+          font-family: 'Electrolize', sans-serif;
+          
+          margin: 2.5% 10% 2.5% 10%;
+          
+          text-align: center;
+      }
+
+      p{
+          
+          font-family: 'Electrolize', sans-serif;
+          
+          margin: 2.5% 10% 2.5% 10%;
+          color: rgb(0, 0, 0);
+          
+          /* text-align: center; */
+      }
+
+
+      /* Solid border */
+      hr.solid {
+        border-top: 1.5px solid rgb(0, 0, 0); 
+        margin: 2.5% 10% 2.5% 10%;
+      }
+
+      /* hr.dim_solid {
+        border-top: 1.5px solid rgb(0, 0, 0);
+        margin: 2.5% 10% 2.5% 10%;  
+      } */
+
+      #more {display: none; 
+      }
+
+      #myBtn {display: block; 
+      margin: 2.5% 10% 2.5% 10%; 
+      }
+
+      .a {
+        border: 1px outset rgb(230, 230, 230);
+        background-color: rgb(230, 230, 230);    
+        text-align: center;
+        margin: 2.5% 10% 2.5% 10%;
+  
+      }
+
+
+    </style>
+
+    <script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+      }
+}
+
+    </script>
+    
+  </head>
+
+
+
+
+<body>
+
+    <img src="logo.png"  class="logo">
+    <h2>TOPOLOGY OPTIMIZATION [ SIMULATION ] </h2> 
+
+    <!-- <hr class="dim_solid"> -->
+
+    <!-- <h2>ASSEMBLY SEQUENCE</h2> -->
+
+    <img src="simulation.gif"  class="center">
+    <br>
+    <p>We explored methods for optimum design and fabrication to reduce material utilization without 
+     <span id="dots">...</span><span id="more"> compromise in strength and stiffness. This method can be used from product to architecture scale objects.
+    </span>
+    </p> 
+    <button onclick="myFunction()" id="myBtn">read more</button>
+    
+
+    <hr class="solid">
+
+    <!-- <h2>MILLING PROCESS</h2>
+    <img src="process.jpg"  class="center">
+    <br> -->
+
+    <!-- <hr class="solid"> -->
+    
+    <h2>FABRICATION PASSPORT</h2>
+
+    <div class="a">
+    <p>
+      <strong>I.D: Topology Optimized Milled Bracket</strong> 
+      <br><br> 
+      <strong>Date: 07/01/2022</strong> 
+      <br><br> 
+      <strong>Fabrication Material: MDF Wood</strong> 
+      <br><br> 
+      <strong>Milling Process: Robotic</strong>  
+      <br><br>
+      <strong>Global Dimensions: 400 x 150 x 15 mm</strong>
+      <br><br> 
+    <strong>Material Saving: 40 %</strong>
+    <br><br>
+    <strong>Applied Force: 100 N</strong>
+    <br><br>
+    </p> 
+    </div> 
+
+  <br>
+  <hr class="solid">
+  <br>
+
+
+</body> 
